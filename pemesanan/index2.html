@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output {
+          padding: 15px 25px;
+          box-sizing: border-box;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          width: 400px;
+          margin-left: 450px;
+        }
+        
+        .output h2 {
+          text-align: center;
+        }
+        
+        .output.tampil {
+          display: block;
+          animation: fade 300ms;
+        }
+        
+        .output p:last-child {
+          color: rgb(32, 204, 55);
+          font-weight: bold;
+          margin-top: 30px;
+        }
+        
+        @keyframes fade {
+          0% {
+            opacity: 0;
+            transform: scale(0);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        .informasi {
+          margin-top: 20px;
+          color: red;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .informasi span:first-child {
+          margin-bottom: 10px;
+          font-size: inherit;
+        }
+        
+        .informasi span {
+          font-size: 0.95em;
+        }
+        
+        .informasi span > span {
+          color: rgb(13, 182, 36);
+          font-weight: bold;
+        }
+        </style>
+ </head>
+ <body>
+     <div class="output">
+        <h2>TICKET PAYMENT</h2>
+        <p>Nama: <span id="namaOutput">Akbar</span></p>
+        <p>Destinasi: <span id="destinasiOutput">Bandung</span></p>
+        <p>Status: <span id="statusOutput"></span>Dewasa</p>
+        <p>Jumlah Tiket: <span id="jumlahOutput">1</span></p>
+        <p>Subtotal: <span id="subtotalOutput">1</span></p>
+        <p>Diskon: <span id="diskonOutput">50%</span></p>
+        <p>Total: <span id="totalOutput">Rp 100.000</span></p>
+        <p><sup>*</sup>Harga 1 tiket: <span id="hargaTiket"></span></p>
+      </div>
+    </div>
+ </body>
+ </html>
